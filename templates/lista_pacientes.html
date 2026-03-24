@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Pacientes</title>
+</head>
+
+<body>
+
+<h1>Pacientes Cadastrados</h1>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Telefone</th>
+    <th>Observações</th>
+</tr>
+
+{% for paciente in pacientes %}
+
+<tr>
+    <td>{{ paciente[0] }}</td>
+    <td>{{ paciente[1] }}</td>
+    <td>{{ paciente[2] }}</td>
+    <td>{{ paciente[3] }}</td>
+    <td>{{ paciente[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
